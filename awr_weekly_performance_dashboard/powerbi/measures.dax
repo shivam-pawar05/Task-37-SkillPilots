@@ -1,0 +1,14 @@
+Average CPU Utilization (%) =
+AVERAGE('awr_performance_sample'[cpu_utilization_pct])
+
+Average I/O Operations Per Second =
+AVERAGE('awr_performance_sample'[io_operations_per_sec])
+
+Total Wait Time (seconds) =
+SUM('awr_performance_sample'[wait_time_seconds])
+
+Average Wait Time (seconds) =
+AVERAGE('awr_performance_sample'[wait_time_seconds])
+
+Snapshot Count =
+COUNTROWS('awr_performance_sample')
